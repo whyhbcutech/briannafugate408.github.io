@@ -1,46 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300italic);
+
 body {
-    margin: 60px auto;
-    width: 70%;
-    color: red;
+	background: #F5F5F5;
+	font: 400 16px/1.8 'Lato', sans-serif;
+	color: #444;	
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+img {
+	max-width: 100%;
+	height: auto;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+a { 
+	color: #19B5FE; 
 }
-a {
-    text-decoration: none;
-    color: #999;
+
+a:hover { 
+	color: #1C92C9; 
 }
-a:hover {
-    text-decoration: underline;
+
+h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #242424;
+	margin: 15px 0 15px;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
+h1 { font-size: 38px; margin: 0 0 30px; }
+
+h2 { font-size: 32px; margin: 25px 0; }
+
+h3 { font-size: 24px; margin: 20px 0; }
+
+h4 { font-size: 16px; }
+ 
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+	margin: 0 0 15px;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+s
+.container {
+	max-width: 1020px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.main {
+	background: #FFF;
+	margin: 100px auto;
+	padding: 30px;
 }
 
-ul.posts li {
-    list-style: none;
+pre {
+	border-radius: 0;
 }
-Don't forget to commit the new CSS file!
 
+pre.prettyprint {
+	padding: 10px 5px;
+	border: 0;
+}
+
+.info {
+	padding: 10px 10px;
+	background-color: #f4f8fa;
+	border-left: 3px solid #5bc0de;
+}
+
+.affix {
+	top: 10px;
+}
+
+.sidebar a {
+	color: #444;
+}
+
+.sidebar li > ul {
+	padding-left: 10px;
+	display: block;
+}
+
+.sidebar .nav > .active > a, 
+.sidebar .nav > .active:hover > a, 
+.sidebar .nav > .active:focus > a {
+	color: #19B5FE; 
+	font-weight: 700;
+}
