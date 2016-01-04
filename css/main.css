@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300italic);
 
 body {
-    margin: 60px auto;
+    margin: 0px;
     width: 70%;
     color: red;
     border-left: 0px;
@@ -20,7 +20,7 @@ nav ul, footer ul {
 
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 0px;
     border: 0px;
    
 }
