@@ -19,45 +19,29 @@
 		</nav>
 		<div id = "nav-img">
 		<center><img src="https://cloud.githubusercontent.com/assets/7980455/12081840/323c0dc8-b254-11e5-8a9f-23816473e39c.JPG" alt=""/></center>
-   		<div id="textslide"><p></p></div>
+   	<script>
+        var counter = 0;
 
-<script>
-var quotes = [
-    "quote1",
-    "quote2",
-    "quote3",
-    "quote4",
-    "quote5",
-    ];
+        function changeText()
+        {
+        var quotes = new Array();
 
-var i = 0;
+        quotes[0] = "Student.";
+        quotes[1] = "Mentor.";
+        quotes[2] = "Techie.";
 
-setInterval(function() {
-$("#textslide").html(quotes[i]);
-    if (i == quotes.length) {
-        i = 0;
-    }
-    else {
-        i++;
-    }
-}, 10 * 1000);
-   		
-  </div>
-   		
-   		
-   		
-	</head>
-	
-	<body>
-		
-				
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-	
-		<footer>
-    		<ul>
-        		
-			</ul>
-		</footer>
-	</body>
+        if (counter > 4)
+            {
+            counter = 0;
+            }
+
+        document.getElementById("textslide").innerHTML = quotes[counter];
+
+        setTimeout(function(){changeText()},10000);
+        counter ++;
+        }
+        </script
+        <body onload="changeText();">
+        <p id="textslide"></p>
+    </body>
 </html>
