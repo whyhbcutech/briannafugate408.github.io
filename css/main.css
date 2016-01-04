@@ -8,6 +8,7 @@ body {
 }
 
 nav ul, footer ul {
+    margin: 0px;
     font: 400 20px 'Lato', sans-serif;;
     padding: 0px;
     list-style: none;
