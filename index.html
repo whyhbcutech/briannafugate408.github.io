@@ -15,9 +15,34 @@
 	        	<li><a href="About.html">About Me</a></li>
         		<li><a href="Press.html">Press</a></li>
         		<li><a href="Contact.html">Contact Me</a></li>
-    		</ul></center>
+    		</ul></center
+    		
+    		<div id="slideshow">
+   <div>
+     <img src="//cloud.githubusercontent.com/assets/7980455/12081840/323c0dc8-b254-11e5-8a9f-23816473e39c.JPG">
+   </div>
+   <div>
+     <img src="//cloud.githubusercontent.com/assets/7980455/12081840/323c0dc8-b254-11e5-8a9f-23816473e39c.JPG">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+</div>
 		</nav>
 		
+		
+	<script>
+		$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+	</script>	
 		
 		<div class="container">
     		<div class="blurb">
