@@ -5,6 +5,7 @@ body {
     width: 70%;
     color: red;
     border-left: 0px;
+    margin-left: 0px;
 }
 
 nav ul, footer ul {
@@ -15,6 +16,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     border-left: 0px;
+    margin-left: 0px; 
  
     
     
