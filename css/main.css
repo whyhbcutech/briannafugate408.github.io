@@ -20,6 +20,11 @@ nav ul li, footer ul li {
 
 #header {
     display: inline;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    
     
 }
 
