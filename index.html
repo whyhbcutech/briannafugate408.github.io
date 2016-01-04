@@ -22,25 +22,27 @@
    		<div id="textslide"><p></p></div>
 
 <script>
+var quotes = [
+    "quote1",
+    "quote2",
+    "quote3",
+    "quote4",
+    "quote5",
+    ];
 
-var quotes = new Array();
+var i = 0;
 
-quotes[0] = "Student";
-quotes[1] = "Mentor";
-quotes[2] = "Techie";
-
-var counter = 0;
-
-while (true) {
-    if (counter > 4) counter = 0;
-    document.getElementById('textslide').firstChild.innerHTML = quotes[counter];
-    counter++;
-    setTimeout( // not sure what to put here, 500); // Want to delay loop iteration
-}
-
-</script>
+setInterval(function() {
+$("#textslide").html(quotes[i]);
+    if (i == quotes.length) {
+        i = 0;
+    }
+    else {
+        i++;
+    }
+}, 10 * 1000);
    		
-   		</div>
+  </div>
    		
    		
    		
