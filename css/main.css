@@ -11,7 +11,8 @@ nav ul, footer ul {
     font: 400 16px/1.8 'Lato', sans-serif;;
     padding: 0px;
     list-style: none;
-    font-weight: italic;
+    font-weight: bold;
+    border: 0;
     
 }
 
