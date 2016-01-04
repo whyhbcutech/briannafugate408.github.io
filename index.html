@@ -19,8 +19,26 @@
 		</nav>
 		<div id = "nav-img">
 		<center><img src="https://cloud.githubusercontent.com/assets/7980455/12081840/323c0dc8-b254-11e5-8a9f-23816473e39c.JPG" alt=""/></center>
-   		<h1>Brianna Fugate!</h1>
-   		<script></script>
+   		<div id="textslide"><p></p></div>
+
+<script>
+
+var quotes = new Array();
+
+quotes[0] = "Student";
+quotes[1] = "Mentor";
+quotes[2] = "Techie";
+
+var counter = 0;
+
+while (true) {
+    if (counter > 4) counter = 0;
+    document.getElementById('textslide').firstChild.innerHTML = quotes[counter];
+    counter++;
+    setTimeout( // not sure what to put here, 500); // Want to delay loop iteration
+}
+
+</script>
    		
    		</div>
    		
